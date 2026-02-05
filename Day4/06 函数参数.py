@@ -17,20 +17,28 @@ def cal(m,n):
     for i in range(m,n+1):
         # print(i)
         ret+=i #ret = ret + i
+    return ret #返回一份给调用者 可以理解成小秘书
+    # print(ret)
 
-    print(ret)
+# print(ret) #这里print ret会报错 因为上面函数结束后 ret就销毁了
+print(cal(666,888)) #以上函数不return 就会返回None值
 
-# cal(100)
-# print("123123")
-# cal(1000)
-# cal(666)
-cal(666,888)
-cal(100,101)
+ret2 = cal(666,888) #也可以这样
+print(ret2)
 
 
-def add(x,y):
-    #x=1
-    #y=2
-    print(x+y)
-add(1,2)
-add(123456,256789)
+
+# # cal(100)
+# # print("123123")
+# # cal(1000)
+# # cal(666)
+# cal(666,888)
+# cal(100,101)
+#
+#
+# def add(x,y):
+#     #x=1
+#     #y=2
+#     print(x+y)
+# add(1,2)
+# add(123456,256789)
